@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Tahoma, sans-serif;
+    background: #f8f6f0;
+    color: #26352f;
+    line-height: 1.8;
+}
+
+.header {
+    background: #164e40;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.header h1 {
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+.header input {
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 150px;
+}
+
+button {
+    padding: 12px 18px;
+    background: #d6b77a;
+    color: #26352f;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.hero {
+    background: linear-gradient(120deg, #164e40, #397e68);
+    color: white;
+    padding: 65px 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.hero h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.hero a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 22px;
+    background: #d6b77a;
+    color: #26352f;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.hero-icon {
+    font-size: 90px;
+}
+
+main {
+    padding: 30px 20px;
+}
+
+main h2 {
+    margin-bottom: 18px;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0 30px;
+}
+
+.categories button {
+    background: white;
+    color: #176b55;
+    border: 1px solid #176b55;
+}
+
+.categories button:hover {
+    background: #176b55;
+    color: white;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 3px 12px #00000012;
+    overflow: hidden;
+}
+
+.product-photo {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    background: #f2f2f2;
+}
+
+.product-card h3 {
+    margin: 12px 0;
+}
+
+.product-card p {
+    color: #397e68;
+    margin-bottom: 10px;
+}
+
+.shopping-cart,
+.about {
+    margin: 30px 20px;
+    padding: 25px;
+    background: white;
+    border-radius: 15px;
+}
+
+#cart-items {
+    padding: 15px 0;
+}
+
+footer {
+    background: #164e40;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+}
