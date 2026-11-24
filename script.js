@@ -1,4 +1,5 @@
-let products = [
+
+let products = []؛
     {
         id: 1,
         name: "مانتو زنانه",
