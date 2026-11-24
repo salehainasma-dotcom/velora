@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VELORA | فروشگاه اینترنتی</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>VELORA</h1>
+
+    <input
+        id="searchInput"
+        type="search"
+        placeholder="جست‌وجوی محصولات..."
+        oninput="searchProducts()"
+    >
+
+    <button onclick="showCart()">
+        🛒 سبد خرید
+        <span id="cart-count">۰</span>
+    </button>
+</header>
+
+<section class="hero">
+    <div>
+        <h2>به دنیای VELORA خوش آمدید</h2>
+        <p>انتخابی خاص برای سلیقه خاص تو</p>
+        <a href="#shop">مشاهده محصولات</a>
+    </div>
+
+    <div class="hero-icon">🛍️</div>
+</section>
+
+<main id="shop">
+    <h2>دسته‌بندی محصولات</h2>
+    <div id="categories" class="categories"></div>
+
+    <h2 id="productTitle">محصولات VELORA</h2>
+    <div id="product-container" class="product-container"></div>
+</main>
+
+<section id="shopping-cart" class="shopping-cart">
+    <h2>🛒 سبد خرید شما</h2>
+
+    <div id="cart-items">
+        سبد خرید شما خالی است.
+    </div>
+
+    <h3>
+        مبلغ کل:
+        <span id="cart-total">۰</span>
+        تومان
+    </h3>
+</section>
+
+<section class="about">
+    <h2>درباره VELORA</h2>
+    <p>ولورا، تجربه‌ای متفاوت از خرید اینترنتی.</p>
+</section>
+
+<footer>
+    تمام حقوق این سایت متعلق به VELORA است.
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
